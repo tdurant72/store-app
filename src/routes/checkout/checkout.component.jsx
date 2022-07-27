@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import "./checkout.styles.scss";
 
 const Checkout = () => {
-  const { cartItems, addItemToCart, removeItemFromCart, totalPrice } =
-    useContext(CartContext);
+  const { cartItems, totalPrice } = useContext(CartContext);
   return (
     <motion.div
       initial={{ opacity: 0, width: 0 }}
