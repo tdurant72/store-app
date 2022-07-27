@@ -45,7 +45,7 @@ export const signInWithGooglePopup = () =>
 export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
-export const db = getFirestore();
+export const db = getFirestore(app);
 
 export const addCollectionAndDocuments = async (
   collectionKey,
